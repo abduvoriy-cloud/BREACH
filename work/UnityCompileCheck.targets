@@ -1,0 +1,15 @@
+<Project>
+  <ItemGroup Condition="'$(AssemblyName)' == 'Assembly-CSharp'">
+    <Compile Include="$(MSBuildThisFileDirectory)..\Assets\STRIKE240\Scripts\Combat\DamageableEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)..\Assets\STRIKE240\Scripts\Player\PlayerHealth.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)..\Assets\STRIKE240\Scripts\AI\BotDifficulty.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)..\Assets\STRIKE240\Scripts\AI\BotVision.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)..\Assets\STRIKE240\Scripts\AI\BotNavigationSurface.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)..\Assets\STRIKE240\Scripts\AI\BotStateMachine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)..\Assets\STRIKE240\Scripts\AI\BotStates.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)..\Assets\STRIKE240\Scripts\AI\BotAgent.cs" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(AssemblyName)' == 'Assembly-CSharp-Editor'">
+    <Compile Include="$(MSBuildThisFileDirectory)..\Assets\STRIKE240\Editor\BotTestTools.cs" />
+  </ItemGroup>
+</Project>
